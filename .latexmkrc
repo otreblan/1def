@@ -1,1 +1,1 @@
-$pdflatex = 'pdflatex  %O  --shell-escape %S';
+$pdflatex = 'lualatex --output-format=pdf  %O  --shell-escape %S';
