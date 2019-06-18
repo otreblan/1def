@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-
+% Opciones {{{
 \usepackage[pdfa, pdfusetitle, unicode=true]{hyperref}
 \usepackage[spanish]{babel}
 \usepackage[margin=1.5cm, a4paper]{geometry}
@@ -20,8 +20,8 @@
 \usepackage{pgfplots}
 
 \pgfplotsset{compat=1.16}
+\graphicspath{ {ima/} }
 %}}}
-
 %Colores de los links {{{
 \definecolor{red}{HTML}{F22C40}
 \definecolor{green}{HTML}{5AB738}
@@ -36,7 +36,6 @@
 	urlcolor=cyan,
 }
 %}}}
-
 %Esto controla a la cabecera {{{
 \usepackage{fancyhdr}
 
@@ -49,9 +48,7 @@
 \setlength{\headheight}{52pt}
 \setlength{\textheight}{700pt}
 %}}}
-
-\graphicspath{ {ima/} }
-
+% Título {{{
 \title{\textbf{<++>}}
 %Aqui hay que poner a los autores
 \author{
@@ -60,8 +57,9 @@
 		%\and <++>\\
 		%\texttt{<++>}\\
 		}
-
-%Aquí empieza el documento
+%}}}
+%}}}
+%Aquí empieza el documento{{{
 \begin{document}
 \maketitle
 \thispagestyle{fancy}
@@ -69,3 +67,4 @@
 <++>
 
 \end{document}
+%}}}
