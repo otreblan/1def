@@ -6,3 +6,7 @@
 *.pdf
 *.synctex.gz
 svg-inkscape
+*.bbl
+*.bcf
+*.blg
+*.run.xml
