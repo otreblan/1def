@@ -8,4 +8,4 @@ Dependencias
 
 Compilación:
 
-1.	make
+	make
