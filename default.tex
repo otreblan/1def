@@ -7,11 +7,16 @@
 \usepackage[shortlabels]{enumitem}
 \usepackage{import}
 \usepackage{xcolor}
+\usepackage{fontspec}
 
-%Esto sirve para poner ecuaciones
+% Btw I use arch
+\setmonofont{InconsolataGo Nerd Font}
+\newcommand{\btw}{{\color{arch}\texttt{ }} } 
+
+% Esto sirve para poner ecuaciones
 \usepackage{mathtools}
 
-%Esto sirve para poner imágenes{{{
+% Esto sirve para poner imágenes{{{
 \usepackage{graphicx}
 \usepackage{svg}
 \usepackage{subcaption}
@@ -22,13 +27,14 @@
 \pgfplotsset{compat=1.16}
 \graphicspath{ {ima/} }
 %}}}
-%Colores de los links {{{
+% Colores de los links {{{
 \definecolor{red}{HTML}{F22C40}
 \definecolor{green}{HTML}{5AB738}
 \definecolor{yellow}{HTML}{D5911A}
 \definecolor{blue}{HTML}{407EE7}
 \definecolor{magenta}{HTML}{6666EA}
 \definecolor{cyan}{HTML}{00AD9C}
+\definecolor{arch}{HTML}{1793D1
 
 \hypersetup{
 	colorlinks=true,
@@ -36,7 +42,7 @@
 	urlcolor=cyan,
 }
 %}}}
-%Esto controla a la cabecera {{{
+% Esto controla a la cabecera {{{
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
@@ -50,7 +56,7 @@
 %}}}
 % Título {{{
 \title{\textbf{<++>}}
-%Aqui hay que poner a los autores
+% Aqui hay que poner a los autores
 \author{
 		Alberto Oporto Ames\\
 		\texttt{alberto.oporto@utec.edu.pe}\\
@@ -59,7 +65,7 @@
 		}
 %}}}
 %}}}
-%Aquí empieza el documento{{{
+% Aquí empieza el documento{{{
 \begin{document}
 \maketitle
 \thispagestyle{fancy}
