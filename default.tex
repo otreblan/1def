@@ -1,17 +1,25 @@
-\documentclass[12pt]{article}
+\documentclass[12pt, twoside]{article}
 % Opciones {{{
 \usepackage[pdfa, pdfusetitle, unicode=true]{hyperref}
 \usepackage[spanish]{babel}
-\usepackage[margin=1.5cm, a4paper]{geometry}
+\usepackage[margin=2.5cm, a4paper]{geometry}
 \usepackage{luacode}
 \usepackage[shortlabels]{enumitem}
 \usepackage{import}
 \usepackage{xcolor}
 \usepackage{fontspec}
+\usepackage[mark, raisemark=0.02\paperheight, marknotags]{gitinfo2}
+\usepackage{setspace}
+
+\doublespacing
 
 % Btw I use arch
 \setmonofont{InconsolataGo Nerd Font}
-\newcommand{\btw}{{\color{arch}\texttt{ }} }
+
+\newcommand{\btw}{{\color{arch}\texttt{}} }
+\newcommand{\git}{{\color{git}\texttt{}} }
+
+\renewcommand{\gitMarkPref}{{\Large\git git}}
 
 % Esto sirve para poner ecuaciones
 \usepackage{mathtools}
@@ -35,11 +43,13 @@
 \definecolor{magenta}{HTML}{6666EA}
 \definecolor{cyan}{HTML}{00AD9C}
 \definecolor{arch}{HTML}{1793D1}
+\definecolor{git}{HTML}{F54D27}
 
 \hypersetup{
 	colorlinks=true,
 	linkcolor=blue,
 	urlcolor=cyan,
+	citecolor=magenta,
 }
 %}}}
 % Esto controla a la cabecera {{{
@@ -50,9 +60,9 @@
 \renewcommand{\headrulewidth}{0pt}
 \chead{ \textbf{\normalsize{<++>} }}
 \fancyhf[HL]{\includesvg[height=0.8\headheight]{Utec.svg}}
-\fancyfoot[C]{\textbf{\thepage}}
-\setlength{\headheight}{52pt}
-\setlength{\textheight}{700pt}
+\fancyhf[FL]{\textbf{\thepage}}
+\setlength{\headheight}{40pt}
+\setlength{\textheight}{675pt}
 %}}}
 % Título {{{
 \title{\textbf{<++>}}
