@@ -31,11 +31,23 @@
 \usepackage{subcaption}
 
 \usepackage{float}
+
+\graphicspath{ {ima/} }
+
+% Opciones de PGF/Tikz{{{
 \usepackage{pgfplots}
 
 \pgfplotsset{compat=1.16}
-\graphicspath{ {ima/} }
-%}}}
+
+\usetikzlibrary{external}
+\usetikzlibrary{babel} % Sin esto algunas cosas no funcionan
+
+% Esto crea un caché para las imágenes de tikz (depende del paquete svg)
+\newcommand{\tikzprefix}{tikz/}
+\svg@shell@mkdir{\tikzprefix}
+\tikzexternalize[prefix=\tikzprefix]
+% }}}
+% }}}
 % Colores de los links {{{
 \definecolor{red}{HTML}{F22C40}
 \definecolor{green}{HTML}{5AB738}
