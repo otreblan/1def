@@ -1,6 +1,9 @@
 # A template
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 
+A LaTeX template to take notes.
+One file per class.
+
 ## Dependencies
 
 * `biber` [![Arch Linux package](https://img.shields.io/archlinux/v/community/any/biber.svg?style=flat-square&logo=arch-linux)](https://www.archlinux.org/packages/community/any/biber/)
@@ -11,6 +14,8 @@
 * `texlive-pictures` [![Arch Linux package](https://img.shields.io/archlinux/v/extra/any/texlive-pictures.svg?style=flat-square&logo=arch-linux)](https://www.archlinux.org/packages/extra/any/texlive-pictures/)
 
 ## Build
+
+### Linux
 
 ```sh
 $ git clone https://github.com/otreblan/1def

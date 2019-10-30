@@ -1,3 +1,5 @@
+\ProvidesPackage{main}[2019-/0/29]
+
 \usepackage[pdfa, pdfusetitle, unicode=true]{hyperref}
 \usepackage[spanish]{babel}
 \usepackage[margin=2.5cm, a4paper]{geometry}
@@ -8,6 +10,7 @@
 \usepackage{fontspec}
 \usepackage[mark, raisemark=0.02\paperheight, marknotags]{gitinfo2}
 \usepackage{setspace}
+\usepackage{subfiles}
 
 \doublespacing
 
@@ -33,6 +36,11 @@
 \usepackage{float}
 
 \graphicspath{ {ima/} }
+
+% Un pequeño hack para que los nombres de los svg inicien con el nombre
+% del archivo donde son llamados.
+% Línea 283 /usr/share/texmf-dist/tex/latex/svg/svg.sty
+\svgsetup{inkscapename=\currfilebase-\svg@file@name}
 
 % Opciones de PGF/Tikz{{{
 \usepackage{pgfplots}
