@@ -9,6 +9,7 @@ LASTDAY=$(
 	sed "s/v\([0-9]\+\)\.\+[0-9]*/\1/"
 )
 CURRDAY=$(( LASTDAY + 1 ))
+CURRDAY=$( printf %02d $CURRDAY )
 
 IMGDIR=ima/clase${CURRDAY}
 
