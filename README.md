@@ -23,3 +23,10 @@ $ cd 1def
 $ make
 ```
 
+### Windows
+
+Install Linux
+
+### MacOS
+
+Install Linux
