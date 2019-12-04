@@ -8,3 +8,5 @@ default: $(TARGET)
 
 clean:
 	git clean -fdX
+
+.PHONY: default clean
